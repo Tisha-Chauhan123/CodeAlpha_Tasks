@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <h1 class="title">Responsive Image Gallery</h1>
+    
+    <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('actors')">Actors</button>
+    <button onclick="filterImages('tour')">Tour Place</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item actors"><img src="actor.jpg" alt="Actor" onclick="openLightbox(this)"></div>
+        <div class="gallery-item tour"><img src="tour.jpg" alt="Tour" onclick="openLightbox(this)"></div>
+        <div class="gallery-item nature"><img src="nature.jpg" alt="Nature" onclick="openLightbox(this)"></div>
+        <div class="gallery-item animals"><img src="animal.jpg" alt="Animal" onclick="openLightbox(this)"></div>
+        <div class="gallery-item actors"><img src="actor1.jpg" alt="Actor 1" onclick="openLightbox(this)"></div>
+        <div class="gallery-item tour"><img src="tour-1.jpg" alt="Tour 1" onclick="openLightbox(this)"></div>
+        <div class="gallery-item nature"><img src="nature-1.jpg" alt="Nature 1" onclick="openLightbox(this)"></div>
+        <div class="gallery-item animals"><img src="animal-1.jpg" alt="Animal 1" onclick="openLightbox(this)"></div>
+        <div class="gallery-item actors"><img src="actor2.jpg" alt="Actor 2" onclick="openLightbox(this)"></div>
+        <div class="gallery-item tour"><img src="tour-2.jpg" alt="Tour 2" onclick="openLightbox(this)"></div>
+        <div class="gallery-item nature"><img src="nature-2.jpg" alt="Nature 2" onclick="openLightbox(this)"></div>
+        <div class="gallery-item animals"><img src="animal-2.jpg" alt="Animal 2" onclick="openLightbox(this)"></div>
+        <div class="gallery-item actors"><img src="actor3.jpg" alt="Actor 3" onclick="openLightbox(this)"></div>
+        <div class="gallery-item tour"><img src="tour-3.jpg" alt="Tour 3" onclick="openLightbox(this)"></div>
+        <div class="gallery-item nature"><img src="nature-3.jpg" alt="Nature 3" onclick="openLightbox(this)"></div>
+        <div class="gallery-item animals"><img src="animal-3.jpg" alt="Animal 3" onclick="openLightbox(this)"></div>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-img" id="lightboxImg" />
+            <div class="nav-buttons">
+                <span onclick="prevImage()">&#10094;</span>
+                <span onclick="nextImage()">&#10095;</span>
+            </div>
+        </div>
+
+        <script src="image.js"></script>
+
+
+
+        
+    </div>
+</body>
+</html>
