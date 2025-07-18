@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Tisha | Portfolio</title>
+</head>
+<body>
+    <!--Nav Bar  -->
+    <nav>
+      <div class="logo">Tisha</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1>Hello I am<span> Tisha</span></h1>
+        <p>Web Developer | Designer | Coder</p>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>I’m a passionate web developer with a love for building beautiful and functional websites...</p>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>BOOTSTRAP</li>
+        </ul>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="project-grid">
+        <div class="project">
+             <h3>project-1</h3>
+             <p>Responsive Image Gallery using HTML,CSS & JAVASCRIPT</p>
+        </div>
+        <div class="project">
+             <h3>project-2</h3>
+             <p>Build calculator using clear and equals with arithmetic operations like +,-,*,/</p>
+        </div>
+        <div class="project">
+             <h3>project-3</h3>
+             <p>Create personal portfolio including Resume,Projects,Skills,About</p>
+        </div>
+        <div class="project">
+             <h3>project-4</h3>
+             <p>Music Player with play,pause,next,previous audio controls using JavaScript</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="resume" data-aos="fade-up">
+        <h2>Resume</h2>
+        <a href="Tisha_Chauhan_Resume-1.pdf" target="_blank" class="btn">Download Resume</a>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <input type="text" placeholder="Enter Name" required />
+            <input type="email" placeholder="Enter email" required />
+            <textarea placeholder="Enter your message" required></textarea>
+            <button type="submit" style="width: 150px; align-items: center; justify-content: space-between;">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tisha. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
